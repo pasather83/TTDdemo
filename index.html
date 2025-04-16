@@ -76,6 +76,7 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       border-radius: 12px;
       font-family: 'Commissioner', sans-serif;
+      border: 1px solid var(--yellow);
     }
     .search-bar {
       display: flex;
@@ -87,7 +88,7 @@
       padding: 10px;
       font-size: 1em;
       width: 200px;
-      border: 1px solid #ccc;
+      border: 1px solid var(--green);
       border-radius: 6px;
     }
     .dropdown-container {
@@ -98,7 +99,7 @@
       padding: 10px;
       font-size: 1em;
       width: 100%;
-      border: 1px solid #ccc;
+      border: 1px solid var(--green);
       border-radius: 6px;
       background: var(--white);
       cursor: pointer;
@@ -190,3 +191,63 @@
   </style>
 </head>
 <body>
+  <header>
+    <img src="https://github.com/pasather83/TTDdemo/raw/main/TTDUAE-LOGO-black-letters.png" alt="TTD UAE Logo">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Tours</a>
+      <a href="#">Visa</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <div class="hero">
+    Camel Ride with the Kids
+  </div>
+  <section class="section">
+    <h2>Explore Categories</h2>
+    <div class="search-bar">
+      <input type="text" placeholder="Search activities...">
+      <div class="dropdown-container" onclick="this.classList.toggle('active')">
+        <div class="dropdown-select">Select Category</div>
+        <div class="dropdown-options">
+          <div>Adventure</div>
+          <div>Kids</div>
+          <div>Romantic</div>
+          <div>Luxury</div>
+          <div>Budget</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <h2>Featured Offers</h2>
+    <div class="features-grid">
+      <div class="feature">🚗 Desert Safari Combo</div>
+      <div class="feature">🏙️ Downtown Discovery Pack</div>
+      <div class="feature">🎟️ Museum of the Future + Burj</div>
+    </div>
+  </section>
+  <div class="popup" id="promoPopup">
+    <span class="popup-close" onclick="document.getElementById('promoPopup').style.display='none'">&times;</span>
+    <h3>🎉 Welcome!</h3>
+    <p>Use code <strong>FIRST10</strong> to get 10% off your first booking.</p>
+    <button onclick="document.getElementById('promoPopup').style.display='none'">Got it!</button>
+  </div>
+  <section class="partner-logos">
+    <h2>Trusted Partners</h2>
+    <img src="https://via.placeholder.com/120x40?text=Dubai+Tourism" alt="Partner Logo">
+    <img src="https://via.placeholder.com/120x40?text=Visit+UAE" alt="Partner Logo">
+    <img src="https://via.placeholder.com/120x40?text=Arabian+Adventures" alt="Partner Logo">
+  </section>
+  <footer>
+    &copy; 2025 Things To Do UAE. All rights reserved.
+  </footer>
+  <script>
+    window.onload = function() {
+      setTimeout(() => {
+        document.getElementById('promoPopup').style.display = 'block';
+      }, 3000);
+    };
+  </script>
+</body>
+</html>
