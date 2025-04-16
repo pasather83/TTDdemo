@@ -12,6 +12,7 @@
       --white: #ffffff;
       --black: #000000;
       --yellow: #ffcd00;
+      --gray-light: #f9f9f9;
     }
 
     body {
@@ -71,7 +72,7 @@
     }
     .feature {
       flex: 1 1 280px;
-      background: var(--white);
+      background: var(--gray-light);
       padding: 20px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       border-radius: 12px;
@@ -179,6 +180,18 @@
       height: 40px;
       object-fit: contain;
     }
+    .enhancements-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .enhancement-item {
+      background: var(--gray-light);
+      border: 1px solid var(--green);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
     footer {
       background: var(--black);
       color: var(--white);
@@ -225,6 +238,27 @@
       <div class="feature">🚗 Desert Safari Combo</div>
       <div class="feature">🏙️ Downtown Discovery Pack</div>
       <div class="feature">🎟️ Museum of the Future + Burj</div>
+      <div class="feature">🎉 Budget Family: Global Village + Frame</div>
+      <div class="feature">🎓 Museum + Culture: Qasr Al Watan + Louvre</div>
+      <div class="feature">🛥️ Romantic Yacht Dinner + Atlantis</div>
+      <div class="feature">💥 Current Deals & Offers</div>
+      <div class="feature">🎫 Adventure Card – Multiple Entries</div>
+      <div class="feature">🌱 National Geographic Eco-Day Tours</div>
+    </div>
+  </section>
+  <section class="section">
+    <h2>More Enhancements</h2>
+    <div class="enhancements-grid">
+      <div class="enhancement-item">🌍 Currency & Language Switcher</div>
+      <div class="enhancement-item">📧 Smart newsletter and itinerary email capture</div>
+      <div class="enhancement-item">🤝 Partner Logos + Affiliate Trust Badges</div>
+      <div class="enhancement-item">📱 App QR integration for mobile usage</div>
+      <div class="enhancement-item">🚐 Transport + Airport Transfers</div>
+      <div class="enhancement-item">🛂 Visa application support + inbound targeting</div>
+      <div class="enhancement-item">🚗 Car rental add-on from attraction pages</div>
+      <div class="enhancement-item">🎟️ Discount code field for first-time users</div>
+      <div class="enhancement-item">💸 Price range slider for budget filtering</div>
+      <div class="enhancement-item">📌 Bucket list builder & shareable itinerary</div>
     </div>
   </section>
   <div class="popup" id="promoPopup">
